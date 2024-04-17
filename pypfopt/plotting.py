@@ -17,7 +17,9 @@ import scipy.cluster.hierarchy as sch
 from . import CLA, EfficientFrontier, exceptions, risk_models
 
 try:
-    plt.style.use("seaborn-deep")
+  # This style is deprecated since version 3.6.
+  # plt.style.use("seaborn-deep")
+    plt.style.use("whitegrid")
 except Exception:  # pragma: no cover
     pass
 
